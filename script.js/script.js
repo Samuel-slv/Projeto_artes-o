@@ -14,7 +14,7 @@ function carregarProdutos() {
                 div.classList.add('produto');
                 div.innerHTML = `
                     <h3>${produto.nome}</h3>
-                    <img src="${produto.imagem}" alt="${produto.nome}">
+                    <img src="${produto.imagem}" alt="${produto.nome}" height="200px" width="200px">
                     <p>Preço: R$ ${produto.preco}</p>
                     <button onclick="adicionarAoCarrinho('${produto.nome}', ${produto.preco}, '${produto.imagem}')">Adicionar ao Carrinho</button>
                 `;
